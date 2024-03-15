@@ -200,6 +200,7 @@ button:focus{
     opacity: 0.2; 
     z-index: -1; 
 }
+
 .about-us h2 {
     font-family: 'Arial', sans-serif;
     font-size: 2.5rem;
