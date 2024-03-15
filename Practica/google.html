@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 2001</title>
+    <style>
+        body {
+            font-family: 'Catull', serif; 
+            text-align: center;
+            background-color: #f2f2f2; 
+            padding: 90px;
+            
+        }
+        
+        .google-text {
+            font-size: 88px;
+            letter-spacing: -7px; 
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        
+        .g { color: #4285F4; } 
+        .o { color: #EA4335; } 
+        .o2 { color: #FBBC05; }
+        .g2 { color: #4285F4; } 
+        .l { color: #34A853; } 
+        .e { color: #EA4335; } 
+
+        .barraBusqueda{
+            margin-top: 2%;
+            width: 40%;
+            margin: auto;
+
+        }
+        #fsrch{
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px;
+
+        }
+
+        .textoBusqueda{
+            color: #666;
+            font-size: 20px;
+        }
+
+        footer .contenedorLinks .listaDeLinks {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4%;
+        }
+
+        footer .contenedorLinks .listaDeLinks li {
+            margin-right: 10px; 
+        }
+
+        footer .contenedorLinks .listaDeLinks a {
+            text-decoration: none; 
+        }
+
+        .contenedorLinks > .listaDeLinks {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            text-decoration-line: underline;
+            color: rgb(46, 58, 221);
+        
+        }
+        
+        footer .marcaRegistrada {
+        font-size: 14px;
+         color: #666; 
+        }
+
+        .boton-google,
+        .boton-suerte {
+            background-color: #f2f2f2; 
+            color: #333; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            padding: 6px 10px; 
+            cursor: pointer; 
+            transition: background-color 0.3s, color 0.3s; 
+            margin-top: 1%;
+        }
+
+        .boton-google:hover,
+        .boton-suerte:hover {
+            background-color: #e0e0e0; 
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!--Titulo-->
+    <div class="google-text">
+        <span class="g">G</span>
+        <span class="o">o</span>
+        <span class="o2">o</span>
+        <span class="g2">g</span>
+        <span class="l">l</span>
+        <span class="e">e</span>
+    </div>
+
+<form id="formularioBusqueda" action="busquedaExitosa.html" method="get">
+    <!--Barra de busqueda-->
+
+    <section class="barraBusqueda">
+
+            <p class="textoBusqueda">Busca en 3 millones de paginas </p>
+            <input name="googleBusqueda" id="fsrch" placeholder="Ingrese su busqueda">
+
+    </section>
+
+    <!--Boton izquierdo-->
+    <section class="boton-busqueda">
+        <div>
+            <button class="boton-google">Busca en Google</button>
+            <button class="boton-suerte">Voy a tener suerte</button>
+        </div>
+    </section>    
+</form>
+
+<script>
+
+    const formulario = document.getElementById('formularioBusqueda');
+
+    // Escuchar el evento submit del formulario
+    formulario.addEventListener('submit', function(event) {
+
+        // Obtener el valor del input de búsqueda
+        const busqueda = document.getElementById('fsrch').value;
+
+        // Almacenar el valor en localStorage
+        localStorage.setItem('busqueda', busqueda);
+    });
+</script>
+
+</body>
+
+    <!--hiperlinks-->
+    <footer class="links">
+
+        <div class="contenedorLinks">
+            <ul class="listaDeLinks">
+                <li><a href="#">Trabaja con Google</a></li>
+                <li><a href="#">Agrega tu sitio a Google</a></li>
+                <li><a href="#">Publicitanos</a></li>
+                <li><a href="#">Google en tu idioma</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </div>
+
+        <p class="marcaRegistrada">® 2001 Google</p>
+
+    </footer>
+    
+
+</html>
