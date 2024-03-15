@@ -183,6 +183,8 @@ button:focus{
     padding: 2% 20%; 
     justify-content: center;
     margin-right: 10px; 
+    margin-top: -8%;
+
 }
 
 .about-us::after {
@@ -238,7 +240,7 @@ button:focus{
 .icon-Qa img,
 .icon-reposteria img,
 .icon-ux img{
-    width: 8%; /* Ancho del icono */
+    width: 6%; /* Ancho del icono */
 }
 
  
