@@ -175,30 +175,29 @@ button:focus{
 /* Estilos para la sección Nosotros */
 
 .about-us {
-    position: relative; /* Establece posición relativa para que los elementos posicionados dentro de él sean relativos a este contenedor */
+    position: relative; 
     display: flex;
     align-items: center; 
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 2% 20%; /* Ajusta el padding superior para mover el contenido hacia arriba */
+    padding: 2% 20%; 
     justify-content: center;
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    margin-right: 10px; 
 }
 
 .about-us::after {
     content: ''; /* Agrega un contenido al pseudo-elemento */
-    position: absolute; /* Establece posición absoluta para que el pseudo-elemento cubra todo el contenedor */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/Practica/imagenes/fondo-alfajor.jpeg");
+    background-image: url("/imagenes/fondo-alfajor.jpeg");
     background-size: cover;
     background-position: center;
-    opacity: 0.2; /* Ajusta la opacidad según tus preferencias */
-    z-index: -1; /* Coloca el pseudo-elemento detrás de los elementos internos */
+    opacity: 0.2; 
+    z-index: -1; 
 }
-
 .about-us h2 {
     font-family: 'Arial', sans-serif;
     font-size: 2.5rem;
