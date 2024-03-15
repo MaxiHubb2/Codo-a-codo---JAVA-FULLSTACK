@@ -1,4 +1,4 @@
-# Codo a Codo - Java Fullstack
+# Codo a Codo 2024 - Java Fullstack
 
 ## Descripción
 
@@ -49,3 +49,5 @@ Este proyecto tiene como objetivo proporcionar una introducción práctica a las
 - [Guía de GitHub](https://guides.github.com/)
 
 ¡Esperamos tus contribuciones!
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-blue.svg)](https://github.com/tu_usuario/tu_repositorio)
